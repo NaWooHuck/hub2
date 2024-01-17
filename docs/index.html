@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {background-color: black; height: 50px; }
+        li {display: inline; color: white; padding: 14.5px; position: relative; top: 28%;}
+    </style>
+</head>
+<body>
+
+    <div>
+          <li id="home">
+            Home
+          </li>
+          <li id="about">
+            About
+          </li>
+          <li id="services">
+            Services
+          </li>
+          <li id="contact">
+            Contact
+          </li>
+      </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            $('#home').mouseover(function(){
+                $('#home').css('background-color','gray');
+            });
+            $('#home').mouseout(function(){
+                $('#home').css('background-color','transparent');
+            });
+            $('#about').mouseover(function(){
+                $('#about').css('background-color','gray');
+            });
+            $('#about').mouseout(function(){
+                $('#about').css('background-color','transparent');
+            });
+            $('#services').mouseover(function(){
+                $('#services').css('background-color','gray');
+            });
+            $('#services').mouseout(function(){
+                $('#services').css('background-color','transparent');
+            });
+            $('#contact').mouseover(function(){
+                $('#contact').css('background-color','gray');
+            });
+            $('#contact').mouseout(function(){
+                $('#contact').css('background-color','transparent');
+            });
+        });
+
+    </script>
+</body>
+</html>
